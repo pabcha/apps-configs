@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "name": "Documentador",
-    "content": "Quiero crear documentación para mi app."
+    "name": "Prompt documentador",
+    "content": "Quiero crear documentación para mi app. Necesito:-Documentación técnica: arquitectura, flujo de datos, estructura de carpetas, dependencias, manejo de errores/red, formato JSON esperado de estaciones con ejemplo.-Documentación funcional: pantallas actuales, flujos de usuario, mensajes de error, criterios de aceptación y guía de QA manual.-Opcional: guía de estilos/branding.-Writing: Tono de voz, Region y localización. Si no existe definir solicitando al usuario.Convenciones: idioma español, IDs en kebab-case. Estructura propuesta: carpeta docs/ con README de índice y archivos tecnica.md, funcional.md, estilos.md.Entregables: textos en Markdown, concisos y claros, con referencias a los archivos del proyecto cuando aplique."
   }
 ]
