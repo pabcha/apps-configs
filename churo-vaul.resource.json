@@ -2,16 +2,25 @@
   {
     "id": "1",
     "name": "Prompt documentador",
+    "type": "prompt",
     "content": "Quiero crear documentación para mi app. Necesito:\\n- Documentación técnica: arquitectura, flujo de datos, estructura de carpetas, dependencias, manejo de errores/red, formato JSON esperado de estaciones con ejemplo.\\n- Documentación funcional: pantallas actuales, flujos de usuario, mensajes de error, criterios de aceptación y guía de QA manual.\\n- Opcional: guía de estilos/branding.\\n- Writing: Tono de voz, Region y localización. Si no existe definir solicitando al usuario.\\n\\nConvenciones: idioma español, IDs en kebab-case. \\n\\nEstructura propuesta: carpeta docs/ con README de índice y archivos tecnica.md, funcional.md, estilos.md.\\n\\nEntregables: textos en Markdown, concisos y claros, con referencias a los archivos del proyecto cuando aplique."
   },
   {
     "id": "2",
     "name": "UX Writer reviewer",
+    "type": "prompt",
     "content": "Actúa como un Senior UX/UI Writer con experiencia en productos digitales exitosos. \\n\\nTu objetivo es auditar y mejorar los textos de mi interfaz para optimizar la experiencia del usuario (UX), la claridad y la conversión. \\n\\nAntes de empezar a proponer cambios, necesito que me hagas todas las preguntas necesarias para entender el contexto de mi proyecto. \\n\\nSi consideras necesario, para entender el objetivo del proyecto puedes utilizar un subagente que analice el código fuente y otros recursos del mismo. \\n\\nPor favor, solicita información sobre: Vos y tono, idioma y region, y lo que consideres necesario para mejorar el resultado. \\n\\nLuego mostraras los resultados de tu auditoria."
   },
   {
     "id": 3,
     "name": "Codebase learner",
+    "type": "prompt",
     "content": "Explore the entire code repository thoroughly. Analyze and understand the codebase from three key perspectives:\n\n- Software Architect – Focus on system design, architecture patterns, and scalability.\n\n- Software Developer – Examine code structure, implementation details, and maintainability.\n\n- Product Manager – Evaluate features, usability, user flows, and alignment with business goals. \n\nAfter your analysis, compile all findings into a comprehensive README.md or OVERVIEW.md file placed at the root of the repository. This document must:\n\n- Be written in Markdown.\n- Include Mermaid diagrams to explain system architecture, workflows, or processes.\n- Be clearly structured and easy to navigate.\n- Provide actionable insights or questions that could guide further development or refinement."
+  },
+  {
+    "id": 4,
+    "name": "Instruction copilot sample",
+    "type": "instruction",
+    "content": "## Proyecto y code guidelines / Code standards and conventions / Coding Style and Documentation\n- Tests unitarios deben enfocarse en la funcionalidad principal\n- Siempre sigue buenas practicas de seguridad\n- ESLint compliance\n- Siempre usar 2-space indent\n- Usar punto y coma\n- Prefer semantic HTML elements (header, nav, main, section, article, footer) over generic divs. \n- Ensure compliance with W3C standards and WCAG 2.1 AA guidelines. \n- Use double quotes and tabs for indentation. \n- Structure code by features/domains rather than file types. For example: features/auth/ components/ hooks/ services/ types.ts utils.ts index.ts\n- Separate concerns into logical layers (components, hooks, types, services)\n- Structure commits according to the Conventional Commits convention (feat, fix, chore, docs, refactor).\n- Maintain clear and up-to-date README files for each important module, documenting its purpose, usage, and dependencies.\n- Keep functions small and purpose-driven.\n- Prefer composition over inheritance.\n- Use PascalCase para nombres de componentes. ¿Usa snake_case para nombres de variables?\n\n## State management\n- Utilizar useReducer para la gestion de estados cuando la funcionalidad aumente en complejidad.\n- Utilizar Context para compartir estados globales si es necesario para evitar prop-drilling.\n- For state management, choose the solution that matches the complexity: useState/useReducer for local state, Context API for simple shared state.\n\n## React\n- Prop types se definen con interfaces como \"[ComponentName]Props\"\n- Favor React functional components with hooks over class components.\n- Use custom hooks to extract and reuse common logic between components.\n- Use React Testing Library for component tests, focusing on user behavior simulation.\n\n## Performance and Optimization\n- Optimize performance with techniques like memoization (useMemo, useCallback) when necessary, but avoid premature optimization. \n- Utilize dynamic imports and lazy loading to reduce the initial bundle size.\n\n## Unit testing\n- Use RTL, Jest for all tests.\n- Mock external calls with Jest, Señalar que se puede mockear\n- Maintain >85% coverage on new code."
   }
 ]
