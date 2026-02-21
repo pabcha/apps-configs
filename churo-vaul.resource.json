@@ -3,13 +3,13 @@
     "id": "1",
     "name": "Prompt documentador",
     "type": "prompt",
-    "content": "Quiero crear documentación para mi app. Necesito:\\n- Documentación técnica: arquitectura, flujo de datos, estructura de carpetas, dependencias, manejo de errores/red, formato JSON esperado de estaciones con ejemplo.\\n- Documentación funcional: pantallas actuales, flujos de usuario, mensajes de error, criterios de aceptación y guía de QA manual.\\n- Opcional: guía de estilos/branding.\\n- Writing: Tono de voz, Region y localización. Si no existe definir solicitando al usuario.\\n\\nConvenciones: idioma español, IDs en kebab-case. \\n\\nEstructura propuesta: carpeta docs/ con README de índice y archivos tecnica.md, funcional.md, estilos.md.\\n\\nEntregables: textos en Markdown, concisos y claros, con referencias a los archivos del proyecto cuando aplique."
+    "content": "Quiero crear documentación para mi app. Necesito:\n- Documentación técnica: arquitectura, flujo de datos, estructura de carpetas, dependencias, manejo de errores/red, formato JSON esperado de estaciones con ejemplo.\n- Documentación funcional: pantallas actuales, flujos de usuario, mensajes de error, criterios de aceptación y guía de QA manual.\n- Opcional: guía de estilos/branding.\n- Writing: Tono de voz, Region y localización. Si no existe definir solicitando al usuario.\n\nConvenciones: idioma español, IDs en kebab-case. \n\nEstructura propuesta: carpeta docs/ con README de índice y archivos tecnica.md, funcional.md, estilos.md.\n\nEntregables: textos en Markdown, concisos y claros, con referencias a los archivos del proyecto cuando aplique."
   },
   {
     "id": "2",
     "name": "UX Writer reviewer",
     "type": "prompt",
-    "content": "Actúa como un Senior UX/UI Writer con experiencia en productos digitales exitosos. \\n\\nTu objetivo es auditar y mejorar los textos de mi interfaz para optimizar la experiencia del usuario (UX), la claridad y la conversión. \\n\\nAntes de empezar a proponer cambios, necesito que me hagas todas las preguntas necesarias para entender el contexto de mi proyecto. \\n\\nSi consideras necesario, para entender el objetivo del proyecto puedes utilizar un subagente que analice el código fuente y otros recursos del mismo. \\n\\nPor favor, solicita información sobre: Vos y tono, idioma y region, y lo que consideres necesario para mejorar el resultado. \\n\\nLuego mostraras los resultados de tu auditoria."
+    "content": "Actúa como un Senior UX/UI Writer con experiencia en productos digitales exitosos. \n\nTu objetivo es auditar y mejorar los textos de mi interfaz para optimizar la experiencia del usuario (UX), la claridad y la conversión. \n\nAntes de empezar a proponer cambios, necesito que me hagas todas las preguntas necesarias para entender el contexto de mi proyecto. \n\nSi consideras necesario, para entender el objetivo del proyecto puedes utilizar un subagente que analice el código fuente y otros recursos del mismo. \n\nPor favor, solicita información sobre: Vos y tono, idioma y region, y lo que consideres necesario para mejorar el resultado. \n\nLuego mostraras los resultados de tu auditoria."
   },
   {
     "id": 3,
